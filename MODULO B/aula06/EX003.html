@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro programa....</title>
+    <style>
+        body{
+            background-color: rgb(77, 77, 147);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        h1{
+           color: lightsalmon;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, necessitatibus. Laboriosam impedit doloremque
+        labore sit, quasi officiis perferendis! Possimus impedit exercitationem architecto mollitia nostrum nulla culpa
+        voluptatibus sequi voluptatum enim!</p>
+
+    <script>
+        /*
+            Number.parseInt = Converte em números inteiros
+            Number.parsetFloat = Converte em números decimais
+            Number = Converte e identifica automaticamente se são inteiros ou decimais.
+            String(n) = converter número para string.
+
+        */
+
+       var n1 = Number(window.prompt('Digite um número:  ')) //Prompt recebe valor string
+       var n2 = Number(window.prompt('Digite outro número:  '))
+       var s = n1 + n2 //somando em strings
+
+     // window.alert('A soma dos números é:  '+ s)
+
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Nacionalidade</h1>
+    Digite o seu País de nascimento: <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="mostrar()">
+    <div id="res">
+
+    </div>
+
+
+    <script>
+
+       function mostrar() {
+            var txtnac = window.document.querySelector('input#nac')
+            var res = window.document.querySelector('div#res')
+            var pais = String(txtnac.value)
+
+            if(pais == "Brasil"){
+                res.innerHTML = '<p>Você é Brasileiro!</p>'
+                res.innerHTML += `<p>É Maravilhoso morar no ${pais}</p>`
+            }else{
+                res.innerHTML = '<p>Você é Estrangeiro</p>'
+                res.innerHTML += `<p>Vivendo em ${pais}</p>`
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
